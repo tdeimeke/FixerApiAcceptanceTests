@@ -41,7 +41,7 @@ namespace FixerApiAcceptanceTests
     public class FixerApiTests
     {
         private readonly HttpClient _client;
-        private readonly string _baseUrl = "http://data.fixer.io/api/latest"; 
+        private readonly string _baseUrl = "http://data.fixer.io/api/latest";
         private readonly string _apiKey;
         private readonly ITestOutputHelper _output;
 
