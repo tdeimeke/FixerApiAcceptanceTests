@@ -1,2 +1,5 @@
-# Ignore test report file
 bin/Debug/net8.0/Report.log
+bin/
+obj/
+TestResults/
+.vscode/
