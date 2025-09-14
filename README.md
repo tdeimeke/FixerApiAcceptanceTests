@@ -19,12 +19,12 @@ The goal is to test one endpoint (`/latest`) with both **positive and negative s
 
    On **Linux/macOS**:
    ```bash
-   export FIXER_API_KEY=your_api_key_here
+   export FIXER_API_KEY_FREE=your_api_key_here
    ```
 
    On **Windows (PowerShell)**:
    ```powershell
-   setx FIXER_API_KEY "your_api_key_here"
+   setx FIXER_API_KEY_FREE "your_api_key_here"
    ```
 
    > ⚠️ Restart VS Code or your terminal after setting the variable.  
@@ -57,18 +57,6 @@ You will see output like:
 ## 📝 Logging
 
 All requests and responses are written to `Report.log` in the project root:
-
-```
-12:08:30 - === Test Execution Started ===
-12:08:30 - REQUEST: https://data.fixer.io/api/latest?access_key=abcd****
-12:08:30 - RESPONSE: 200 - {
-  "success": true,
-  "timestamp": 1694510400,
-  "base": "EUR",
-  "rates": { "USD": 1.078, "DKK": 7.46 }
-}
-12:08:30 - === Test Execution Finished ===
-```
 
 > The API key is masked in logs (`abcd****`).  
 > The file is included in `.gitignore` so it will not be committed to GitHub.
